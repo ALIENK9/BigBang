@@ -1,0 +1,237 @@
+/*
+======================================================================
+							SEZIONE GENERALE
+======================================================================
+*/
+
+* {
+  	padding: 0; /*Dal bordo del contenitore verso l'interno*/
+  	margin: 0; /*Dal bordo del contenitore verso l'esterno*/
+}
+
+html, body {/*max-width serve per compattare lapag su schermi grandi*/
+  	max-width: 1024px;
+  	margin: auto; /*il browser mette i margini simmetrici, limitato dal maxwidth*/
+  	font-family: Verdana, Arial, Helvetica, sans-serif; /*priorita' decrescente*/
+  	font-size: 100%; 
+  /*- font con grazie(con decorazioni, tipo Times): per la stampa
+    - font senza grazie: per la visualizzazione pagina*/
+}
+
+body { 
+  	border: 1px solid #DDD;/*attenzione che se lo mettevo nella prima sezione viene doppio*/
+}
+
+a {
+	color: darkred;
+	text-decoration: underline;
+}
+
+a:visited {
+  color: red;
+}
+
+table, th, td {
+	padding: 0.5em;
+	border: 1px solid black;
+	text-align: center;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+thead, tfoot {
+	background-color: #BD091B;
+	color: #FFF;
+}
+
+dl { /*definition list*/
+	width: 90%;
+	margin-left: 5%;
+}
+
+dt {	/*definition term, elemento della dl*/
+	font-weight: 700;
+	font-size: 1.4em;
+	background-color: #BD091B;
+	color: white;
+	padding: 0.5em;
+	border-width: 1px 1px 0 1px;
+	border-style: solid;
+	border-color: #DDD;
+}
+
+dd {
+	border: 1px solid #dddddd;
+	padding: 0.5em;
+	margin-bottom: 2em;
+}
+
+/*
+======================================================================
+								HEADER
+======================================================================
+*/
+
+#header {
+  	text-align: center;
+  	min-height: 10.5em;
+}
+
+#logo { /*Immagine non sopra il mega, per gli sfondi 200-300kB altrimenti e' peso per nulla*/
+	float: left;
+	width: 10em;
+	margin: 0.4em;
+}
+
+#header h1 {
+	font-size: 3.5em;
+	color: #BD091B;
+}
+
+#header h2 {
+  	font-size: 1.3em;
+  	font-style: italic;
+  	font-weight: normal; /*bold = 700, normal = 400*/
+}
+
+/*
+======================================================================
+							BARRA BREADCRUMB
+======================================================================
+*/
+
+#navigation {
+  	margin-top: 1em;
+	background-color: #BD091B;
+	color: white;
+	padding: 0.5em;
+	font-size: 1em;
+	font-weight: bold;
+	border-top: 1px solid #DDD;
+}
+
+/*
+======================================================================
+								MENU'
+======================================================================
+*/
+
+#menu {
+	float: left;
+	font-size: 1.1em;
+	width: 20%;
+	padding: 0.8em;
+}
+
+#menu ul {
+  	list-style-type: none;
+}
+
+#menu ul li {
+  	padding-top: 0.5em;
+  	padding-bottom: 0.5em;
+}
+
+/*
+======================================================================
+							CONTENUTO PAGINA
+======================================================================
+*/
+
+#content {
+	text-align: justify;
+	margin-left: 20%; /*La stessa width data al menu*/
+	width: 70%;
+	padding: 2em 1em 6em 3.5em;
+	border-left: 1px solid #DDD;
+}
+
+#content h1 {
+	font-size: 1.6em;
+	font-weight: bold;
+	color: black;
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+#indexImage {
+  	width: 70%;
+  	margin: auto;
+  	display: block; /*Trasforma in elemento di linea in elemento di blocco*/
+  	margin-top: 1.0em;
+  	margin-bottom: 1.0em;
+}
+
+#paragStagioni {
+	text-align: center;
+	margin-top: 5%;
+	margin-bottom: 1%;
+}
+
+
+#tabellaStagioni {
+	margin-left: 5%;
+	width: 90%;
+}
+
+
+#imageCast, #imageMaschere {
+	width: 70%;
+	display: block;
+	margin-left: 15%;
+	margin-top: 0.8em;
+	margin-bottom: 0.8em;
+}
+
+#paragSigla {
+	margin-bottom: 2em; 
+}
+
+#imageBand, #imageLavagna {
+	float: right;
+	width: 40%;
+	margin: 0 1em 0.5em 1em;
+}
+
+.imgPersonaggio {
+	float: left;
+	width: 20%;
+	margin-right: 1em;
+	margin-bottom: 0.5em;
+}
+
+/*
+======================================================================
+								FOOTER
+======================================================================
+*/
+
+#footer {
+  	max-width: 100%; /*solo con width sforava a destra*/
+  	border-width: 1px 0 1px 0;
+  	border-style: solid;
+  	border-color: #DDD;
+  	font-size: 0.8em;
+	font-weight: lighter;
+	font-style: italic;
+	text-align: center;
+	padding: 0.5em;
+}
+
+#leggimi {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+
+#xhtml {
+	float: left;
+}
+
+#css {
+	float: right;
+}
+
+
