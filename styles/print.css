@@ -1,0 +1,222 @@
+/*
+togliere i colori. Quelli di sfondo li toglie il browser in automatico.
+
+*/
+
+/*
+======================================================================
+                           SEZIONE GENERALE
+======================================================================
+*/
+html, body {/*max-width serve per compattare lapag su schermi grandi*/
+    margin: auto; /*il browser mette i margini simmetrici, limitato dal maxwidth*/
+    font-family: Times, Verdana, Arial, Helvetica, sans-serif; /*priorita' decrescente*/
+    font-size: 100%; 
+  /*- font con grazie(con decorazioni, tipo Times): per la stampa
+    - font senza grazie: per la visualizzazione pagina*/
+}
+
+body { 
+    border: none;/*attenzione che se lo mettevo nella prima sezione viene doppio*/
+}
+
+
+table, th, td {
+    padding: 0.3em;
+    border: 1px solid black;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+
+thead, tfoot {
+    background-color: white;
+    color: black;
+}
+
+/*dl {
+    width: 90%;
+    margin-left: 5%;
+}*/
+
+dt {  /*definition term, elemento della dl*/
+    font-weight: 700;
+    font-size: 1.4em;
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+dd {
+    border: none;
+    padding: 0.5em;
+    margin-bottom: 2em;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+/*
+======================================================================
+                HEADER
+======================================================================
+*/
+
+#header {
+    text-align: left;
+    min-height: 10.5em;
+}
+
+#logo { /*Immagine non sopra il mega, per gli sfondi 200-300kB altrimenti e' peso per nulla*/
+    display: none;
+}
+
+#header h1 {
+    font-size: 3.5em;
+    color: black;
+    font-weight: bold;
+}
+
+#header h2 {
+    font-size: 1.3em;
+    font-style: italic;
+    font-weight: normal; /*bold = 700, normal = 400*/
+}
+
+/*
+======================================================================
+              BARRA BREADCRUMB
+======================================================================
+*/
+
+#navigation {
+  margin-top: 0;
+  background-color: white;
+  color: black;
+  padding: 0;
+  font-size: 1em;
+  font-weight: bold;
+  border-top: 1px solid #DDD;
+  border-bottom: 1px solid #DDD;
+}
+
+/*
+======================================================================
+                MENU'
+======================================================================
+*/
+
+#menu {
+  display: none;
+  font-size: 1.1em;
+  width: 20%;
+  padding: 0.8em;
+}
+
+/*
+======================================================================
+              CONTENUTO PAGINA
+======================================================================
+*/
+
+#content {
+  text-align: justify;
+  margin: 0;
+  width: 96%;
+  padding: 1em;
+  border-left: none;
+}
+
+#content h1 {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+#indexImage {
+    display: none;
+}
+
+#paragStagioni {
+    text-align: left;
+}
+
+
+#tabellaStagioni {
+    margin-left: 0;
+}
+
+
+#imageCast, #imageMaschere {
+    display: none;
+}
+
+#paragSigla {
+    margin-bottom: 2em; 
+}
+
+#imageBand, #imageLavagna {
+    float: none;
+    width: 60%;
+    margin: 0;
+}
+
+.imgPersonaggio {
+    float: left;
+    width: 20%;
+    min-width: 85px;
+    margin-right: 1em;
+    margin-bottom: 0.5em;
+}
+
+/*
+======================================================================
+                FOOTER
+======================================================================
+*/
+
+#footer {
+    max-width: 100%; /*solo con width sforava a destra*/
+    border-width: 1px 0 1px 0;
+    border-style: solid;
+    border-color: #DDD;
+    font-size: 0.8em;
+    font-weight: lighter;
+    font-style: italic;
+    text-align: center;
+    padding: 0.5em;
+}
+
+#leggimi {
+    margin: 0;
+}
+
+
+#xhtml {
+    display: none;
+}
+
+#css {
+    display: none;
+}
+
+/*
+======================================================================
+                AIUTI
+======================================================================
+*/
+
+.aiuti {
+    display: none;
+}
