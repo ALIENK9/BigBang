@@ -4,8 +4,13 @@
 ======================================================================
 */
 
+html, body {
+  	padding:0px 0px 0px 0px;
+  	margin: 0;
+}
 body { 
     border: none;
+    padding: 1.5%;
 }
 
 table, th, td {
@@ -17,19 +22,19 @@ table {
 }
 
 dl { /*definition list*/
-  width: 100%;
-  margin-left: 0;
+  	width: 100%;
+  	margin-left: 0;
 }
 
 dt {  /*definition term, elemento della dl*/
-  padding: 0.5em;
-  border: none;
+  	padding: 0.5em;
+  	border: none;
 }
 
 dd {
-  border: none;
-  padding: 0.3em;
-  margin-bottom: 1.2em;
+  	border: none;
+  	padding: 0.3em;
+  	margin-bottom: 1.2em;
 }
 
 /*
@@ -49,11 +54,11 @@ dd {
 */
 
 #menu {
-   width: 100%;
-   float: none;
-   text-align: center;
-	 font-size: 1.2em;
-	 padding: 1.0em;
+   	width: 100%;
+   	float: none;
+   	text-align: center;
+	font-size: 1.2em;
+	padding-bottom: 1em;
 }
 
 #menu ul li {
@@ -68,7 +73,13 @@ dd {
 */
 
 #navigation {
-  width: 100%;
+  	width: 96%;
+  	padding: 2%;
+}
+#navigation p {
+  	width: 100%;
+  	margin: 0;
+  	padding: 0;
 }
 
 /*
@@ -78,38 +89,38 @@ dd {
 */
 
 #content {
-  margin: 0;
 	width: 100%;
 	border-left: none;
-  border-top: 2px solid #DDD; /*L'HO MESSO IO*/
-  padding: 1.5em;
+  	border-top: 1px solid #DDD; /*L'HO MESSO IO*/
+  	margin: 0 0 1em 0;
+  	padding: 1em 0 0 0;
 }
 
 #tabellaStagioni {
-  width: 100%;
-  margin: 0;
+  	width: 100%;
+  	margin: 0;
 }
 
 #imageCast, #imageMaschere {
-  width: 95%;
-  display: block;
-  margin-left: 2.5%;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  	width: 95%;
+  	display: block;
+  	margin-left: 2.5%;
+  	margin-top: 0.5em;
+  	margin-bottom: 0.5em;
 }
 
 #imageBand , #imageLavagna {
-  float: none;
-  width: 95%;
-  margin: 1em auto 0.5em 2.5%;
+  	float: none;
+  	width: 95%;
+  	margin: 1em auto 0.5em 2.5%;
 }
 
 .imgPersonaggio {
-  float: none;
-  width: 60%;
-  margin-right: 20%;
-  margin-left: 20%;
-  margin-bottom: 0.5em;
+  	float: none;
+  	width: 60%;
+  	margin-right: 20%;
+  	margin-left: 20%;
+  	margin-bottom: 0.5em;
 }
 
 /*
@@ -119,13 +130,13 @@ dd {
 */
 
 #footer {
-  float: none;
-  border: none;
-  font-size: 0.7em;
+  	float: none;
+  	border: none;
+  	font-size: 0.7em;
 	font-weight: lighter;
 	font-style: italic;
 	text-align: center;
-  margin-bottom: 2em;
+  	margin-bottom: 2em;
 }
 
 #xhtml {

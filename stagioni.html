@@ -2,10 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it-IT" lang="it-IT">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-		<link rel="stylesheet" type="text/css" href="styles/lab1.css" media="handheld, screen"/>
+		<link rel="stylesheet" type="text/css" href="styles/standard.css" media="handheld, screen"/>
 		<link rel="stylesheet" type="text/css" href="styles/small.css" media="handheld, screen and (max-width:480px), 
 		only screen and (max-device-width:480px)"/>
-		<link type="text/css" rel="stylesheet" href="print.css" media="print"/>
+		<link type="text/css" rel="stylesheet" href="styles/print.css" media="print"/>
 		<title>The Big Bang Theory</title>
 	</head>
 	<body>
@@ -20,6 +20,7 @@
 		</div>
 
 		<div id="menu">
+			<a class="aiuti_nascosti" href="#content">Salta al contenuto</a>
 			<ul>
 				<li><a href="index.html">Home</a></li>
 				<li><a href="trama.html">Trama</a></li>
@@ -32,13 +33,13 @@
 		<div id="content">
 			<h1>Le Stagioni</h1>
 			<p id="paragStagioni">Stagioni</p>
-			<table id="tabellaStagioni" title="Stagioni">
+			<table id="tabellaStagioni" title="Stagioni" summary="Per ciascuna stagione sono listati il numero degli episodi, l'anno di trasmissione di quella stagione negli Stati Uniti ed in Italia">
 				<thead>
 					<tr>
-						<th>Stagione</th>
-						<th>Episodi</th>
-						<th>prima TV <abbr xml:lang="en" title="United States of America">USA</abbr></th>
-						<th>Prima TV Italia</th>
+						<th scope="col">Stagione</th>
+						<th scope="col">Episodi</th>
+						<th scope="col">prima TV <abbr xml:lang="en" title="United States of America">USA</abbr></th>
+						<th scope="col">Prima TV Italia</th>
 					</tr>
 				</thead>
 
@@ -53,73 +54,79 @@
 				
 				<tbody>
 					<tr>
-						<td>Prima Stagione</td>
-						<td>17</td>
-						<td>2007-2008</td>
-						<td>2008</td>
+						<td scope="row">Prima Stagione</td>
+						<td scope="row">17</td>
+						<td scope="row">2007-2008</td>
+						<td scope="row">2008</td>
 					</tr>
 					<tr>
-						<td>Seconda Stagione</td>
-						<td>23</td>
-						<td>2008-2009</td>
-						<td>2009</td>
+						<td scope="row">Seconda Stagione</td>
+						<td scope="row">23</td>
+						<td scope="row">2008-2009</td>
+						<td scope="row">2009</td>
 					</tr>
 					<tr>
-						<td>Terza Stagione</td>
-						<td>23</td>
-						<td>2009-2010</td>
-						<td>2010</td>
+						<td scope="row">Terza Stagione</td>
+						<td scope="row">23</td>
+						<td scope="row">2009-2010</td>
+						<td scope="row">2010</td>
 					</tr>
 					<tr>
-						<td>Quarta Stagione</td>
-						<td>24</td>
-						<td>2010-2011</td>
-						<td>2012</td>
+						<td scope="row">Quarta Stagione</td>
+						<td scope="row">24</td>
+						<td scope="row">2010-2011</td>
+						<td scope="row">2012</td>
 					</tr>
 					<tr>
-						<td>Quinta Stagione</td>
-						<td>24</td>
-						<td>2011-2012</td>
-						<td>2012</td>
+						<td scope="row">Quinta Stagione</td>
+						<td scope="row">24</td>
+						<td scope="row">2011-2012</td>
+						<td scope="row">2012</td>
 					</tr>
 					<tr>
-						<td>Sesta Stagione</td>
-						<td>24</td>
-						<td>2012-2013</td>
-						<td>2013</td>
+						<td scope="row">Sesta Stagione</td>
+						<td scope="row">24</td>
+						<td scope="row">2012-2013</td>
+						<td scope="row">2013</td>
 					</tr>
 					<tr>
-						<td>Settima Stagione</td>
-						<td>24</td>
-						<td>2013-2014</td>
-						<td>2014</td>
+						<td scope="row">Settima Stagione</td>
+						<td scope="row">24</td>
+						<td scope="row">2013-2014</td>
+						<td scope="row">2014</td>
 					</tr>
 					<tr>
-						<td>Ottava Stagione</td>
-						<td>24</td>
-						<td>2014-2015</td>
-						<td>2015</td>
+						<td scope="row">Ottava Stagione</td>
+						<td scope="row">24</td>
+						<td scope="row">2014-2015</td>
+						<td scope="row">2015</td>
 					</tr>
 					<tr>
-						<td>Nona Stagione</td>
-						<td>24</td>
-						<td>2015-2016</td>
-						<td>2015-2016</td>
+						<td scope="row">Nona Stagione</td>
+						<td scope="row">24</td>
+						<td scope="row">2015-2016</td>
+						<td scope="row">2015-2016</td>
 					</tr>
 					<tr>
-						<td>Decima Stagione</td>
-						<td>24</td>
-						<td>2016-2017</td>
-						<td>2017</td>
+						<td scope="row">Decima Stagione</td>
+						<td scope="row">24</td>
+						<td scope="row">2016-2017</td>
+						<td scope="row">2017</td>
 					</tr>
 					<tr>
-						<td>Undicesima Stagione</td>
-						<td>--</td>
-						<td>2017-2018</td>
-						<td>Inedita</td>
+						<td scope="row">Undicesima Stagione</td>
+						<td scope="row">--</td>
+						<td scope="row">2017-2018</td>
+						<td scope="row">Inedita</td>
 					</tr>
 				</tbody>
 			</table>
+
+			<p class="aiuti">
+				<a class="link_aiuti" href="#menu">
+					Torna al menu
+				</a>
+			</p>
 		</div>
 
 		<div id="footer">
